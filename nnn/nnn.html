@@ -1,0 +1,234 @@
+<html>
+  <head>
+    <style>
+      #main {
+        width: 900px;
+        position: relative;
+        left: 20%;
+      }
+      #menu ul {
+        list-style-type: none;
+        width: 1200px;
+        height: 50px;
+        background-color: palegreen;
+        text-align: center;
+      }
+      #menu ul li {
+        color: white;
+        display: inline-table;
+        width: 140px;
+        line-height: 40px;
+        border: 1px dashed black;
+        position: relative;
+      }
+      #menu ul li a {
+        text-decoration: none;
+        display: block;
+        color: blueviolet;
+        line-height: 50px;
+      }
+      #menu ul li a:hover {
+        background: yellow;
+        color: red;
+      }
+      #menu ul li > .submenu {
+        display: none;
+        position: absolute;
+        width: 140px;
+        height: 260px;
+        z-index: 1;
+      }
+      #menu ul li:hover > .submenu {
+        display: block;
+      }
+      #content-left {
+        float: left;
+        width: 150px;
+      }
+      #mid-1 {
+        width: 500px;
+        position: relative;
+        left: 50px;
+      }
+      #mid-2 {
+        width: 500px;
+        position: relative;
+        top: 100px;
+        left: 50px;
+      }
+      #content-right {
+        float: right;
+        width: 300px;
+      }
+      #right-1 {
+        border: 1px solid rgb(238, 61, 90);
+        text-align: center;
+        position: relative;
+        left: 600px;
+        top: -300px;
+      }
+      #right-2 {
+        border: 1px solid rgb(238, 61, 90);
+        text-align: center;
+        position: relative;
+        left: 600px;
+        top: -290px;
+      }
+      #right-3 {
+        border: 1px solid rgb(238, 61, 90);
+        text-align: center;
+        position: relative;
+        left: 600px;
+        top: -280px;
+        height: 280px;
+      }
+      footer {
+        background-color: black;
+        text-align: center;
+        height: 50px;
+        position: relative;
+        top: 500px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <img src="Hoa1.jpg" width="900px" height="50px" />
+      </header>
+      <div id="menu">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Hoa sự kiện</a></li>
+          <li>
+            <a href="#">Hoa cảnh</a>
+            <ul class="submenu">
+              <li><a href="#">Hoa sống đời</a></li>
+              <li><a href="#">Hoa trạng nguyên</a></li>
+              <li><a href="#">Hoa dạ nguyên thảo</a></li>
+              <li><a href="#">Hoa cúc chậu</a></li>
+              <li><a href="#">Hoa dừa cạn</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Cây cảnh</a></li>
+          <li><a href="#">Đồ trang trí</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Đăng kí</a></li>
+          <li><a href="#">Giỏ hàng</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="content-left">
+          <ul>
+            <b>Tủ sách</b>
+            <li>Cây hoa cảnh tết</li>
+            <li>Mai vàng</li>
+            <li>Cây hoa cảnh tết</li>
+            <li>Mai vàng</li>
+
+            <li>Cây hoa cảnh tết</li>
+
+            <li>Cây hoa cảnh tết</li>
+            <li>Mai vàng Mai vàng Mai vàng</li>
+          </ul>
+        </div>
+        <div id="content-mid">
+          <div id="mid-1">
+            <div style="float: left">
+              <img src="ChauCay1.jpg" width="150px" height="150px" />
+            </div>
+            <div style="float: right; width: 200px">
+              <b>Bạch tuyết mai bonsai</b><br /><br />Tên khoa học Tên khoa học
+              học Tên khoa học Tên khoa học Tên khoa học là seriassa foetida
+              jajsuhiu hiwudh Họ thực vật Tên khoa học là seriassa foetida
+              jajsuhiu hiwudh Họ thực vật Tên khoa học là seriassa foetida
+              jajsuhiu hiwudh Họ thực vật
+            </div>
+          </div>
+          <div id="mid-2">
+            <div style="float: left">
+              <img src="ChauCay2.jpg" width="150px" height="150px" />
+            </div>
+            <div
+              style="float: right; width: 200px; position: relative; top: -70px"
+            >
+              <b>Bạch tuyết mai bonsai</b><br /><br />Tên khoa học Tên khoa học
+              học Tên khoa học Tên khoa học Tên khoa học là seriassa foetida
+              jajsuhiu hiwudh Họ thực vật Tên khoa học là seriassa foetida
+              jajsuhiu hiwudh Họ thực vật Tên khoa học là seriassa foetida
+              jajsuhiu hiwudh Họ thực vật
+            </div>
+          </div>
+        </div>
+        <div id="content-right">
+          <div id="right-1">
+            <div
+              style="background-color: pink; color: white; text-align: center"
+            >
+              Giỏ hàng
+            </div>
+            <span style="color: red; text-align: center"
+              >Tổng cộng: 0 VNĐ<br />Xem giỏ hàng<br />Thanh toán</span
+            >
+          </div>
+          <div id="right-2">
+            <div
+              style="background-color: pink; color: white; text-align: center"
+            >
+              Hỗ trợ trực tuyến
+            </div>
+            <img src="#" width="20px" height="20px" /><br />admin web
+          </div>
+          <div id="right-3">
+            <p
+              style="
+                background-color: pink;
+                margin-top: 0;
+                color: white;
+                text-align: center;
+              "
+            >
+              Tin mới
+            </p>
+
+            <img
+              src="ChauCay1.jpg"
+              width="50px"
+              height="50px"
+              style="float: left"
+            />
+            <p style="float: right; position: relative; right: 20px">
+              Máy in espoto nháy 2 đèn đỏ
+            </p>
+
+            <img
+              src="ChauCay1.jpg"
+              width="50px"
+              height="50px"
+              style="position: relative; top: 100px; left: -55px"
+            />
+            <p style="float: right; position: relative; right: 20px">
+              Máy in espoto nháy 2 đèn đỏ
+            </p>
+
+            <img
+              src="ChauCay1.jpg"
+              width="50px"
+              height="50px"
+              style="float: left"
+            />
+            <p style="float: right; position: relative; right: 20px">
+              Máy in espoto nháy 2 đèn đỏ
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p style="color: rgb(255, 255, 255); position: relative; top: -700">
+          Bản quyền CNTT_HAUI.com
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

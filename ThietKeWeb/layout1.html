@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #all {
+      font-family: "Times New Roman", Times, serif;
+      background-color: yellow;
+      width: 900px;
+      position: relative;
+    }
+    header {
+      width: 900px;
+      height: 60px;
+      background-color: aqua;
+    }
+    header h1 {
+      position: absolute;
+      top: 10px;
+      float: left;
+    }
+    header h3 {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+    }
+    #menu ul {
+      list-style-type: none;
+      width: 900px;
+      height: 50px;
+      background-color: orange;
+      text-align: center;
+    }
+    #menu ul li {
+      color: black;
+      display: inline-table;
+      width: 120px;
+      line-height: 40px;
+      position: relative;
+    }
+    #menu ul li a {
+      text-decoration: none;
+      display: block;
+      color: blueviolet;
+      line-height: 50px;
+    }
+    #menu ul li a:hover {
+      background: blue;
+      color: beige;
+    }
+    #menu ul li > .submenu {
+      display: none;
+      position: absolute;
+      width: 120px;
+      height: 150px;
+    }
+    #menu ul li:hover > .submenu {
+      display: block;
+    }
+
+    #content table {
+      width: 900px;
+      height: 300px;
+    }
+    #content table tr td {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      background-color: grey;
+      width: 900px;
+      height: 25px;
+    }
+  </style>
+  <body>
+    <div id="all">
+      <header>
+        <h1>ProTech</h1>
+        <h3>CÔNG TY PHÁT TRIỂN NGUỒN NHÂN LỰC Á CHÂU</h3>
+      </header>
+      <div id="menu">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li>
+            <a href="#">Thời trang nữ</a>
+            <ul class="submenu">
+              <li><a href="">Áo nữ</a></li>
+              <li><a href="">Quần nữ</a></li>
+              <li><a href="">Áo khoác nữ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Thời trang nam</a>
+            <ul class="submenu">
+              <li><a href="">Áo nam</a></li>
+              <li><a href="">Quần nam</a></li>
+              <li><a href="">Áo khoác nam</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Phụ kiện</a></li>
+          <li><a href="#">Tin tức sự kiện</a></li>
+          <li><input type="text" size="10" /></li>
+          <li><input type="submit" value="Tìm kiếm" /></li>
+        </ul>
+      </div>
+      <div id="content">
+        <b>Thời trang nam</b>
+        <table>
+          <tr>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <input type="submit" value="40.000" style="background: blue" />
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <p>
+                <input type="submit" value="40.000" style="background: blue" />
+              </p>
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <input type="submit" value="40.000" style="background: blue" />
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <input type="submit" value="40.000" style="background: blue" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <input type="submit" value="40.000" style="background: blue" />
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <input type="submit" value="40.000" style="background: blue" />
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <input type="submit" value="40.000" style="background: blue" />
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="90px" />
+              <p>Táo siêu ngon</p>
+              <input type="submit" value="40.000" style="background: blue" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <footer>BẢN QUYỀN CÔNG TY CÔNG NGHỆ PROTECH 2019</footer>
+    </div>
+  </body>
+</html>

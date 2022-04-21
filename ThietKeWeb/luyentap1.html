@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #main {
+      width: 1200px;
+      font-family: "Times New Roman", Times, serif;
+      margin: 0 auto;
+      position: relative;
+    }
+    header {
+      width: 1200px;
+      background-color: rgba(0, 153, 255, 0.925);
+      height: 60px;
+      position: relative;
+    }
+    .a {
+      position: absolute;
+      left: 10px;
+    }
+    .a1 {
+      position: absolute;
+      top: 20px;
+      left: 470px;
+    }
+    #menu {
+      width: 300px;
+      position: absolute;
+      top: 70px;
+      border: 1px solid rgba(0, 153, 255, 0.925);
+    }
+    #menu ul {
+      list-style-type: none;
+      text-indent: 5%;
+    }
+    #menu ul li {
+      width: 300px;
+      position: relative;
+      border-bottom: 2px solid rgba(0, 153, 255, 0.925);
+    }
+    #menu ul li a {
+      text-decoration: none;
+      display: block;
+      line-height: 30px;
+    }
+    #menu ul li a:hover {
+      background: yellow;
+      color: blue;
+    }
+    #menu ul li > .submenu {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 300px;
+      background-color: rgba(0, 247, 255, 0.568);
+      z-index: 1;
+    }
+    #menu ul li:hover > .submenu {
+      display: block;
+    }
+
+    h3 {
+      width: 300px;
+      color: white;
+      background-color: rgba(0, 153, 255, 0.925);
+    }
+    #content {
+      width: 890px;
+      position: absolute;
+      top: 70px;
+      left: 310px;
+    }
+    .b {
+      text-indent: 20%;
+    }
+    .c {
+      position: absolute;
+      right: 100px;
+    }
+    .b1 {
+      position: absolute;
+      top: 90px;
+      width: 890px;
+      text-align: center;
+    }
+    .b1 tr td {
+      width: 100px;
+    }
+    .c2 {
+      float: right;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <header>
+        <div class="a">
+          <img src="tao.jpg" width="50px" height="60px" />
+          <table class="a1">
+            <tr>
+              <td>
+                <input type="text" placeholder="Bạn cần gì..." size="25" />
+              </td>
+              <td><input type="submit" value="Search" /></td>
+            </tr>
+          </table>
+        </div>
+      </header>
+      <div id="menu">
+        <h3>ALL CATEGORY</h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li>
+            <a href="">Laptop</a>
+            <ul class="submenu">
+              <li><a href="">Laptop 1</a></li>
+              <li><a href="">Laptop 2</a></li>
+              <li><a href="">Laptop 3</a></li>
+              <li><a href="">Laptop 4</a></li>
+            </ul>
+          </li>
+          <li><a href="">Shocks</a></li>
+          <li><a href="">Cloth</a></li>
+          <li><a href="">Cosmetic</a></li>
+          <li><a href="">Desktops</a></li>
+          <li><a href="">Kids</a></li>
+          <li><a href="">MP3 Players</a></li>
+          <li><a href="">Perfume</a></li>
+          <li><a href="">+MORE</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <div class="b">
+          CÂY BỘ GAME - ĐỒ HỌA CŨ
+          <select class="c">
+            <option value="">Sắp xếp theo</option>
+            <option value="">Giá từ thấp đến cao</option>
+            <option value="">Giá từ cao đến thấp</option>
+          </select>
+        </div>
+        <table class="b1">
+          <tr>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+            <td>
+              <img src="tao.jpg" width="100px" height="100px" /> <br />
+              Bộ cây h6l g2030 ram 4gb, ssd 120g vga gtl 730, man 20
+              <br />
+              <div class="c2"><input type="submit" value="Mua Ngay" /></div>
+              <div class="c1">
+                <span style="text-decoration-line: line-through"
+                  >4.850.000</span
+                >
+                <br />
+                <span style="color: red">4.000.000</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

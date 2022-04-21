@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+      h1 {
+        text-align: center;
+        color: orange;
+      }
+      img {
+        margin-left: 180px;
+        width: 100px;
+        height: 195px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid orange;
+      }
+      table {
+        border-collapse: collapse;
+        margin-left: 180px;
+        width: 300px;
+        position: absolute;
+        top: 80px;
+        left: 110px;
+      }
+      table tr th {
+        background-color: orange;
+      }
+
+      tr:not(:first-child):hover {
+        background-color: #c9c9c9;
+        cursor: pointer;
+      }
+      tr:nth-child(even) {
+        background-color: olive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Các món ngon Hà Nội</h1>
+    <div class="a">
+      <div class="anh"><img src="anh1.png" /></div>
+
+      <table>
+        <tr>
+          <th>STT</th>
+          <th>Tên món ăn</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Bánh cuốn thanh trì</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Xôi Hà Nội</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>chả cá lã vọng</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>cháo cóc</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Bánh gai Ninh Giang</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Bún than Hà Nội</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Canh lằng</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>vịt quay Lạng Sơn</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

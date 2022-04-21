@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #all {
+      width: 900px;
+      margin: 0 auto;
+      font-family: "Times New Roman", Times, serif;
+      background: pink;
+      position: relative;
+    }
+    header {
+      width: 900px;
+      height: 60px;
+      background-color: yellow;
+    }
+    .logo {
+      position: absolute;
+      top: 0%;
+      left: 30px;
+    }
+    h2 {
+      position: absolute;
+      top: 20px;
+      right: 150px;
+    }
+
+    #menu ul {
+      list-style-type: none;
+      width: 900px;
+      height: 50px;
+      background-color: gray;
+      text-align: center;
+    }
+    #menu ul li {
+      text-align: center;
+      display: inline-table;
+      width: 120px;
+      height: 49px;
+      line-height: 40px;
+      border: 1px solid white;
+      position: relative;
+    }
+    #menu ul li a {
+      text-decoration: none;
+      display: block;
+      color: black;
+      line-height: 50px;
+    }
+    #menu ul li a:hover {
+      background: blue;
+      color: black;
+    }
+    #menu ul li > .submenu {
+      display: none;
+      position: absolute;
+      width: 122px;
+      height: 155px;
+    }
+    #menu ul li:hover > .submenu {
+      display: block;
+    }
+    .left {
+      background: green;
+      width: 200px;
+      height: 400px;
+      float: left;
+    }
+    .left p {
+      height: 20px;
+      text-indent: 7%;
+      background: red;
+    }
+
+    .a {
+      height: 95px;
+      border: 1px solid black;
+    }
+    .left .a ul {
+      position: absolute;
+      left: 20px;
+    }
+    .left .a ul li {
+      width: 180px;
+      border-bottom: 1px solid black;
+      list-style-type: square;
+    }
+    .right p {
+      float: right;
+    }
+    .b {
+      text-align: center;
+    }
+    .a1 {
+      width: 700px;
+      height: 278px;
+      text-align: center;
+    }
+    .b1 {
+      text-align: center;
+      border: 1px solid black;
+      background-color: greenyellow;
+    }
+    footer {
+      text-align: center;
+      line-height: 70px;
+      width: 900px;
+      height: 80px;
+      background-color: yellow;
+      position: absolute;
+      top: 530px;
+    }
+  </style>
+  <body>
+    <div id="all">
+      <header>
+        <div class="logo">
+          <img src="anh1.png" width="100px" height="60px" />
+        </div>
+        <h2>CÔNG TY TNHN DỊCH VỤ THƯƠNG MẠI TÚ MỸ</h2>
+      </header>
+      <div id="menu">
+        <ul>
+          <li><a href=""> Trang chủ</a></li>
+          <li><a href="">Giới thiêu chung</a></li>
+          <li><a href="">Đối tác</a></li>
+          <li>
+            <a href="">Dịch vụ</a>
+            <ul class="submenu">
+              <li><a href="">Dịch vụ a</a></li>
+              <li><a href="">Dịch vụ a</a></li>
+              <li><a href="">Dịch vụ a</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Sản Phẩm</a>
+            <ul class="submenu">
+              <li><a href="">Dịch vụ a</a></li>
+              <li><a href="">Dịch vụ a</a></li>
+              <li><a href="">Dịch vụ a</a></li>
+            </ul>
+          </li>
+          <li><a href="">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="left">
+          <p>SẢN PHẨM</p>
+          <div class="a">
+            <ul>
+              <li>Túi</li>
+              <li>trang sức</li>
+              <li>Đồ gốm sứ mĩ nghệ</li>
+              <li>Thổ cầm</li>
+              <li>Thời trang</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="anh">
+            <img src="anh1.png" width="700px" height="100px" />
+          </div>
+          <div class="b">Sản Phẩm túi</div>
+          <table class="a1">
+            <tr>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+              <td>
+                <img src="tao.jpg" width="100px" height="90px" />
+                <br />Hoa 1
+                <br />
+                <input
+                  type="submit"
+                  value=" Giá 40.000đ"
+                  style="background: blue"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="b1">Trang chủ giới thiệu chung đối tác Dịch vụ liên hệ</div>
+      </div>
+      <footer>BẢN QUYỀN THUỘC VỀ KHOA CNTT</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    #all {
+      width: 900px;
+      font-family: "Times New Roman", Times, serif;
+      position: relative;
+    }
+    header {
+      width: 900px;
+      height: 60px;
+    }
+    header .anh1 {
+      float: left;
+    }
+    header h3 {
+      position: absolute;
+      top: 10px;
+      left: 110px;
+      color: blue;
+    }
+    header .anh2 {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    /* menu website */
+    #menu {
+      list-style-type: none;
+      width: 900px;
+      height: 50px;
+      background-color: black;
+      text-align: left;
+    }
+    #menu ul li {
+      text-align: center;
+      color: white;
+      display: inline-table;
+      width: 90px;
+      line-height: 40px;
+      border: 1px solid white;
+      position: relative;
+    }
+    #menu ul li a {
+      text-decoration: none;
+      display: block;
+      color: white;
+      line-height: 50px;
+    }
+    #menu ul li a:hover {
+      background: blue;
+      color: beige;
+    }
+    /* phan content */
+    #content {
+      width: 900px;
+      height: 400px;
+    }
+    #content .a {
+      float: left;
+    }
+    #content > table {
+      position: absolute;
+      top: 150px;
+      left: 210px;
+      width: 490px;
+    }
+    #content .b {
+      float: right;
+    }
+    #content .b table tr td {
+      border: 10px solid black;
+    }
+    footer {
+      width: 900px;
+      height: 50px;
+      background: blue;
+      position: relative;
+    }
+    footer .a1 {
+      float: left;
+      line-height: 50px;
+    }
+    footer .a2 {
+      float: right;
+      line-height: 50px;
+    }
+  </style>
+  <body>
+    <div id="all">
+      <header>
+        <div class="anh1">
+          <img src="tao.jpg" height="55px" width="100px" />
+        </div>
+        <h3>NHA VIET XANH</h3>
+        <div class="anh2">
+          <img src="anh1.png" height="55px" width="600px" />
+        </div>
+      </header>
+      <div id="menu">
+        <ul>
+          <li><a href="">Trang chu</a></li>
+          <li><a href="">Biet thu</a></li>
+          <li><a href="">Nha pho</a></li>
+          <li><a href="">Nha cap 4</a></li>
+          <li><a href="">Nha vuon </a></li>
+          <li><a href="">noi that</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="a">
+          <br />
+          <p>MAU BIET THU</p>
+          <img src="anh1.png" height="300px" width="200px" />
+        </div>
+        <table>
+          <tr>
+            <td><img src="anh1.png" height="50px" width="50px" /></td>
+            <td>BTS mau thiet ke 2 tang 3 phong ngu</td>
+          </tr>
+          <tr>
+            <td><img src="anh1.png" height="50px" width="50px" /></td>
+            <td>BTS mau thiet ke 2 tang 3 phong ngu</td>
+          </tr>
+          <tr>
+            <td><img src="anh1.png" height="50px" width="50px" /></td>
+            <td>BTS mau thiet ke 2 tang 3 phong ngu</td>
+          </tr>
+          <tr>
+            <td><img src="anh1.png" height="50px" width="50px" /></td>
+            <td>BTS mau thiet ke 2 tang 3 phong ngu</td>
+          </tr>
+          <tr>
+            <td><img src="anh1.png" height="50px" width="50px" /></td>
+            <td>BTS mau thiet ke 2 tang 3 phong ngu</td>
+          </tr>
+        </table>
+        <div class="b">
+          <br />
+          <p>Mau Nha Bep</p>
+          <table class="r">
+            <tr>
+              <td><img src="anh1.png" height="140px" width="190px" /></td>
+            </tr>
+            <tr>
+              <td><img src="anh1.png" height="140px" width="190px" /></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <footer>
+        <div class="a1">01234567890000</div>
+        <div class="a2"><input type="text" placeholder="seach" /></div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Phiếu đăng kí tham gia chương trình khuyên mãi</h1>
+    <table>
+      <tr>
+        <td>Họ và tên</td>
+        <td><input type="text" size="30px" /></td>
+      </tr>
+      <tr><td>Địa chỉ</td><td><input type="text" size="20px" /></td></tr>
+    </tr>
+    <tr><td>Điện thoại</td><td><input type="text" size="10px" /></td></tr>
+    <tr><td>Phái</td><td><input type="radio" value="Nam" />Nam <input type="radio" value="Nữ" />Nữ</td></tr>
+    <tr><td>Nghề nghiệp</td><td><select name="" id="">
+        <option>Chọn</option>
+        <option>Bác sĩ</option>
+    </select></td></tr>
+    <tr><td>Sản phẩm tham gia</td><td><select size="4">
+        <option>kem đánh răng</option>
+        <option>kem đánh răng</option>
+        <option>kem đánh răng</option>
+        <option>kem đánh răng</option>
+    </select></td></tr>
+    <tr><td>số người dự đoán tham gia</td><td><input type="text" size="10"></td></tr>
+    <tr><td colspan="2"><input type="submit" value="đồng ý" onclick="cauthongbao.innerText='bạn đăng kí thành công'"></td></tr>
+    <tr><td colspan="2"><label id="cauthongbao" style="color: red;"></label></td></tr>
+    </table>
+  </body>
+</html>
